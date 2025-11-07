@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { TestNavigation } from "@/components/TestNavigation";
+import { TestCards } from "@/components/TestCards";
 
 const TestThree = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,8 +25,8 @@ const TestThree = () => {
 
           <h1
             className="
-              relative text-5xl md:text-7xl font-bold
-              bg-gradient-to-r from-accent-foreground via-foreground to-accent-foreground
+              relative text-6xl md:text-8xl font-bold
+              bg-gradient-to-r from-foreground via-primary to-foreground
               bg-clip-text text-transparent
               mb-8
               animate-in fade-in slide-in-from-bottom-4
@@ -49,6 +50,8 @@ const TestThree = () => {
               Descubra as informações apresentadas na página do Teste 3.
             </p>
           </div>
+
+          <TestCards />
         </div>
       </article>
     </main>

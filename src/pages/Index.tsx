@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { TestNavigation } from "@/components/TestNavigation";
+import { TestCards } from "@/components/TestCards";
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -49,6 +50,8 @@ const Index = () => {
               Página inicial com o conteúdo do Teste 1.
             </p>
           </div>
+
+          <TestCards />
         </div>
       </article>
     </main>
