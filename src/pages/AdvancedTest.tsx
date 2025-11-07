@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "@/components/NavLink";
 
-const Index = () => {
+const AdvancedTest = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -9,7 +9,7 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="relative flex min-h-screen items-center justify-center bg-gradient-to-br from-background via-background to-secondary/30 p-6">
+    <main className="relative flex min-h-screen items-center justify-center bg-gradient-to-br from-background via-background to-primary/20 p-6">
       <nav className="absolute top-8 left-1/2 z-10 w-full max-w-xl -translate-x-1/2 px-6">
         <div className="flex items-center justify-center gap-3 rounded-full border border-border/40 bg-card/80 p-2 shadow-lg backdrop-blur">
           <NavLink
@@ -33,33 +33,37 @@ const Index = () => {
         className={`
           max-w-4xl w-full text-center
           transform transition-all duration-1000 ease-out
-          ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}
+          ${isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}
         `}
       >
         <div className="relative">
-          <div className="absolute inset-0 bg-primary/5 blur-3xl rounded-full transform -translate-y-1/2" />
-          
-          <h1 className="
-            relative text-6xl md:text-8xl font-bold 
-            bg-gradient-to-r from-foreground via-primary to-foreground 
-            bg-clip-text text-transparent
-            mb-8
-            animate-in fade-in slide-in-from-bottom-4
-            duration-700
-          ">
-            Teste de Otimização
+          <div className="absolute inset-0 -translate-y-1/2 rounded-full bg-primary/10 blur-3xl" />
+
+          <h1
+            className="
+              relative text-5xl md:text-7xl font-bold
+              bg-gradient-to-r from-primary via-foreground to-primary
+              bg-clip-text text-transparent
+              mb-8
+              animate-in fade-in slide-in-from-bottom-4
+              duration-700
+            "
+          >
+            Teste Avançado via Codex
           </h1>
-          
-          <div className="
-            relative inline-block px-8 py-4 
-            bg-card/80 backdrop-blur-sm
-            border border-border/50
-            rounded-2xl shadow-lg
-            animate-in fade-in slide-in-from-bottom-8
-            duration-700 delay-200
-          ">
+
+          <div
+            className="
+              relative inline-block px-8 py-4
+              bg-card/80 backdrop-blur-sm
+              border border-border/50
+              rounded-2xl shadow-lg
+              animate-in fade-in slide-in-from-bottom-8
+              duration-700 delay-200
+            "
+          >
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Uma página simples, elegante e otimizada para performance
+              Uma experiência aprimorada para explorar todo o potencial do Codex.
             </p>
           </div>
         </div>
@@ -68,4 +72,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default AdvancedTest;
