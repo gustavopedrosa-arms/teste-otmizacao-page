@@ -4,6 +4,7 @@ const navigationItems = [
   { to: "/", label: "Teste 1" },
   { to: "/teste-2", label: "Teste 2" },
   { to: "/teste-3", label: "Teste 3" },
+  { to: "/teste-4", label: "Teste 4" },
 ];
 
 const TestNavigation = () => (

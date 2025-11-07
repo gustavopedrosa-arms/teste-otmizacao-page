@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { TestNavigation } from "@/components/TestNavigation";
 import { TestCards } from "@/components/TestCards";
 
-const TestTwo = () => {
+const TestFour = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -10,7 +10,7 @@ const TestTwo = () => {
   }, []);
 
   return (
-    <main className="relative flex min-h-screen items-center justify-center bg-gradient-to-br from-background via-background to-primary/20 p-6">
+    <main className="relative flex min-h-screen items-center justify-center bg-gradient-to-br from-background via-background to-secondary/30 p-6">
       <TestNavigation />
 
       <article
@@ -21,7 +21,7 @@ const TestTwo = () => {
         `}
       >
         <div className="relative">
-          <div className="absolute inset-0 -translate-y-1/2 rounded-full bg-primary/10 blur-3xl" />
+          <div className="absolute inset-0 -translate-y-1/2 rounded-full bg-secondary/30 blur-3xl" />
 
           <h1
             className="
@@ -33,7 +33,7 @@ const TestTwo = () => {
               duration-700
             "
           >
-            Teste 2
+            Teste 4
           </h1>
 
           <div
@@ -47,7 +47,7 @@ const TestTwo = () => {
             "
           >
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Explore os detalhes apresentados na página do Teste 2.
+              Conheça as novidades apresentadas na página do Teste 4.
             </p>
           </div>
 
@@ -58,4 +58,4 @@ const TestTwo = () => {
   );
 };
 
-export default TestTwo;
+export default TestFour;
