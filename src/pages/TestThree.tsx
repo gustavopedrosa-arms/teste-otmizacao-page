@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { TestNavigation } from "@/components/TestNavigation";
 
-const Index = () => {
+const TestThree = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -9,7 +9,7 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="relative flex min-h-screen items-center justify-center bg-gradient-to-br from-background via-background to-secondary/30 p-6">
+    <main className="relative flex min-h-screen items-center justify-center bg-gradient-to-br from-background via-background to-accent/20 p-6">
       <TestNavigation />
 
       <article
@@ -20,19 +20,19 @@ const Index = () => {
         `}
       >
         <div className="relative">
-          <div className="absolute inset-0 bg-primary/5 blur-3xl rounded-full transform -translate-y-1/2" />
+          <div className="absolute inset-0 -translate-y-1/2 rounded-full bg-accent/30 blur-3xl" />
 
           <h1
             className="
-              relative text-6xl md:text-8xl font-bold
-              bg-gradient-to-r from-foreground via-primary to-foreground
+              relative text-5xl md:text-7xl font-bold
+              bg-gradient-to-r from-accent-foreground via-foreground to-accent-foreground
               bg-clip-text text-transparent
               mb-8
               animate-in fade-in slide-in-from-bottom-4
               duration-700
             "
           >
-            Teste 1
+            Teste 3
           </h1>
 
           <div
@@ -46,7 +46,7 @@ const Index = () => {
             "
           >
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Página inicial com o conteúdo do Teste 1.
+              Descubra as informações apresentadas na página do Teste 3.
             </p>
           </div>
         </div>
@@ -55,4 +55,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default TestThree;

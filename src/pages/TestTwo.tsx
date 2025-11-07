@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "@/components/NavLink";
+import { TestNavigation } from "@/components/TestNavigation";
 
-const AdvancedTest = () => {
+const TestTwo = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -10,24 +10,7 @@ const AdvancedTest = () => {
 
   return (
     <main className="relative flex min-h-screen items-center justify-center bg-gradient-to-br from-background via-background to-primary/20 p-6">
-      <nav className="absolute top-8 left-1/2 z-10 w-full max-w-xl -translate-x-1/2 px-6">
-        <div className="flex items-center justify-center gap-3 rounded-full border border-border/40 bg-card/80 p-2 shadow-lg backdrop-blur">
-          <NavLink
-            to="/"
-            className="rounded-full px-6 py-2 text-sm font-medium text-muted-foreground transition-colors duration-300 hover:text-foreground"
-            activeClassName="bg-primary text-primary-foreground shadow-md"
-          >
-            Página inicial
-          </NavLink>
-          <NavLink
-            to="/teste-avancado"
-            className="rounded-full px-6 py-2 text-sm font-medium text-muted-foreground transition-colors duration-300 hover:text-foreground"
-            activeClassName="bg-primary text-primary-foreground shadow-md"
-          >
-            Teste avançado
-          </NavLink>
-        </div>
-      </nav>
+      <TestNavigation />
 
       <article
         className={`
@@ -49,7 +32,7 @@ const AdvancedTest = () => {
               duration-700
             "
           >
-            Teste Avançado via Codex
+            Teste 2
           </h1>
 
           <div
@@ -63,7 +46,7 @@ const AdvancedTest = () => {
             "
           >
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Uma experiência aprimorada para explorar todo o potencial do Codex.
+              Explore os detalhes apresentados na página do Teste 2.
             </p>
           </div>
         </div>
@@ -72,4 +55,4 @@ const AdvancedTest = () => {
   );
 };
 
-export default AdvancedTest;
+export default TestTwo;
